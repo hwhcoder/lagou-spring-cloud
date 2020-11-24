@@ -6,7 +6,6 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 import com.example.demo.filter.CustomFilter;
-import com.example.user.EnableUserClient;
 
 //@EnableUserClient
 @SpringBootApplication

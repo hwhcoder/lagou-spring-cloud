@@ -2,6 +2,7 @@
   "properties": [
     {
       "name": "spring.user.name",
+      "type": "java.lang.String",
       "defaultValue": "cxytinadi"
     },
     {

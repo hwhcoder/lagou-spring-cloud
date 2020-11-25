@@ -1,0 +1,3 @@
+/actuator/health
+/actuator/beans
+/actuator/springcloud 自定义

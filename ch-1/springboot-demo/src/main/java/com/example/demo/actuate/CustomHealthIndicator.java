@@ -4,6 +4,10 @@ import org.springframework.boot.actuate.health.AbstractHealthIndicator;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.stereotype.Component;
 
+/**
+ * 自定义的HealthIndicator
+ * /actuator/health
+ */
 @Component
 public class CustomHealthIndicator extends AbstractHealthIndicator {
 	

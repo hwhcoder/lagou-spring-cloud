@@ -23,6 +23,7 @@ public class SpringbootDemoApplication {
 	
 	// 注册过滤器
 	@Bean
+	//Filter的注册有两种方式，一种是直接用 @WebFilter 注解，另一种是通过 FilterRegistrationBean 进行注册
 	public FilterRegistrationBean<CustomFilter> registration() {
 		CustomFilter filter = new CustomFilter();
 		FilterRegistrationBean<CustomFilter> registration = new FilterRegistrationBean<CustomFilter>(filter);

@@ -1,3 +1,5 @@
 /actuator/health
 /actuator/beans
 /actuator/springcloud 自定义
+
+在 Spring Boot 中，内置容器的参数可以在 application 配置文件中进行指定，不同容器的参数配置有对应的前缀，server.tomcat 就是配置 Tomcat 的参数，server.jetty 就是配置 Jetty 的参数。

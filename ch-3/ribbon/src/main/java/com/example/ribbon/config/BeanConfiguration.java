@@ -7,9 +7,9 @@ import com.netflix.loadbalancer.IRule;
 
 public class BeanConfiguration {
 
-	@Bean
-	public IRule myRule() {
-		return new MyRule();
-	}
+//	@Bean
+//	public IRule myRule() {
+//		return new MyRule();
+//	}
 	
 }

@@ -12,8 +12,15 @@ import com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy;
  */
 public class CustomHystrixPropertiesStrategy extends HystrixPropertiesStrategy {
 
+	/**
+	 * 每个commandKey第一次访问时，会执行本方法
+	 * @param commandKey
+	 * @param builder
+	 * @return
+	 */
 	public HystrixCommandProperties getCommandProperties(HystrixCommandKey commandKey, HystrixCommandProperties.Setter builder) {
-	    // 这里可以自己控制
+		System.out.println(commandKey + "****" + builder.toString());
+		// 这里可以自己控制
 		return new HystrixPropertiesCommandDefault(commandKey, builder);
 	}
 	

@@ -11,6 +11,7 @@ public class CustomRequestInterceptor implements RequestInterceptor {
 	@Override
 	public void apply(RequestTemplate template) {
 		System.err.println(template.url());
+		//请求头中添加信息
 		template.header("myHeader", "xx.com");
 	}
 

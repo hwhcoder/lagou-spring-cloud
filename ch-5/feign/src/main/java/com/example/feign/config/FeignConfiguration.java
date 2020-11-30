@@ -9,6 +9,10 @@ import feign.auth.BasicAuthRequestInterceptor;
 
 public class FeignConfiguration {
 
+	/**
+	 * 日志级别
+	 * @return
+	 */
 	@Bean
 	public Logger.Level getLoggerLevel() {
 		return Logger.Level.FULL;

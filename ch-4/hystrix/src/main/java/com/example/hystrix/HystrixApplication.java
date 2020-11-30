@@ -18,9 +18,12 @@ import com.netflix.hystrix.strategy.HystrixPlugins;
 public class HystrixApplication {
 
 	public static void main(String[] args) {
-		// 手动注册插件
+
+		// 手动注册插件，非必需
 		HystrixPlugins.getInstance().registerEventNotifier(new CustomHystrixEventNotifier());
-		HystrixPlugins.getInstance().registerPropertiesStrategy(new CustomHystrixPropertiesStrategy());
+//		HystrixPlugins.getInstance().registerPropertiesStrategy(new CustomHystrixPropertiesStrategy());
+
+
 		SpringApplication.run(HystrixApplication.class, args);
 	}
 

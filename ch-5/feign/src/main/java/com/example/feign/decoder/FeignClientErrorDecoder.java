@@ -9,6 +9,9 @@ import feign.Response;
 import feign.Util;
 import feign.codec.ErrorDecoder;
 
+/**
+ * 解码组件
+ */
 @Component
 public class FeignClientErrorDecoder implements ErrorDecoder {
 

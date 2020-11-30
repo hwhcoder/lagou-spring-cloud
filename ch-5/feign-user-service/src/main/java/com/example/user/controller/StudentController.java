@@ -6,6 +6,7 @@ import com.example.api.StudentRemoteService;
 import com.example.api.request.StudentRequest;
 
 @RestController
+// 注意下这边实现的接口是StudentRemoteService，而不是client
 public class StudentController implements StudentRemoteService {
 
 	@Override

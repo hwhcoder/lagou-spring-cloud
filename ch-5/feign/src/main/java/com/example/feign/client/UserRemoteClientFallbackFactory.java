@@ -14,6 +14,7 @@ import feign.hystrix.FallbackFactory;
  *
  */
 @Component
+// 泛型里传入了Feign Client
 public class UserRemoteClientFallbackFactory implements FallbackFactory<UserRemoteClient> {
 	private Logger logger = LoggerFactory.getLogger(UserRemoteClientFallbackFactory.class);
 	

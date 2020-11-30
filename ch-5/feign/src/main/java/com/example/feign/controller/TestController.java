@@ -17,7 +17,11 @@ public class TestController {
 	
 	@Autowired
 	private StudentRemoteClient studentRemoteClient;
-	
+
+	/**
+	 * http://localhost:8086/getUser
+	 * @return
+	 */
 	@GetMapping("/getUser")
 	public User getUser() {
 		return userRemoteClient.getUser(1);

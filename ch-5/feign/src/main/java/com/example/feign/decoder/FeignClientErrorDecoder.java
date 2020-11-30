@@ -10,7 +10,10 @@ import feign.Util;
 import feign.codec.ErrorDecoder;
 
 /**
- * 解码组件
+ * 异常解码器
+ *
+ * 提供者那边可以模拟异常
+ * 注意下，如果不是提供者抛出的异常，例如服务提供者根本没有启动而导致的调用异常，则不会走到这边
  */
 @Component
 public class FeignClientErrorDecoder implements ErrorDecoder {

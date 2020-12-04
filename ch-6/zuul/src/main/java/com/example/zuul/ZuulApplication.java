@@ -25,7 +25,8 @@ public class ZuulApplication implements CommandLineRunner {
 		FilterLoader.getInstance().setCompiler(new GroovyCompiler());
 		try {
 			FilterFileManager.setFilenameFilter(new GroovyFileFilter());
-			FilterFileManager.init(5, "/Users/yinjihuan/Downloads/filters");
+
+			FilterFileManager.init(5, "C:\\file\\github\\lagou-spring-cloud\\ch-6\\zuul\\src\\main\\java\\com\\example\\zuul\\filter");
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}

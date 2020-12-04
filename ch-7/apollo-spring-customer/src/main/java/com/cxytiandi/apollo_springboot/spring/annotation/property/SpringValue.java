@@ -62,6 +62,7 @@ public class SpringValue {
 
   private void injectMethod(Object newVal)
       throws InvocationTargetException, IllegalAccessException {
+    // invoke
     methodParameter.getMethod().invoke(bean, newVal);
   }
 

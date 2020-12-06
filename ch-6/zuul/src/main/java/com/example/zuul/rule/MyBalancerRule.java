@@ -20,6 +20,9 @@ public class MyBalancerRule extends RoundRobinRule {
 
 	@Override
 	public Server choose(Object key) {
+//		获取 Request 对象只能在信号量隔离的模式下使用，线程隔离获取的 Request 对象为空，
+//		这是因为 RequestContext 是基于 ThreadLocal 来实现的，ThreadLocal 跨线程后将无法获取
+
 		// 获取request只能在信号量隔离下使用，线程隔离下ThreadLocal无法使用，解决方案参考：http://cxytiandi.com/blog/detail/18782
 		HttpServletRequest req = (HttpServletRequest)RequestContext.getCurrentContext().getRequest();
 		String version = req.getHeader("version");

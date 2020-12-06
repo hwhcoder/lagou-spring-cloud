@@ -27,7 +27,10 @@ public class ConfigController {
 	
 	@Autowired
 	private RedisConfig redisConfig;
-	
+
+	/**
+	 * 直接注入 Config 接口
+	 */
 	@ApolloConfig
 	private Config config;
 	 

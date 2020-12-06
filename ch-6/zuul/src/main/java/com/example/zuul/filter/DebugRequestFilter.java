@@ -16,6 +16,15 @@ import com.netflix.util.Pair;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
+/**
+ * 自定义过滤器
+ *
+ * 另外：
+ * Zuul 中自带了一个 DebugFilter，会将执行过程中的一些信息记录起来，
+ * 方便调试和问题排查，我们可以通过配置 zuul.include-debug-header=true 来开启这个 Debug 模式，
+ * 然后在访问请求的时候，在后面追加一个 debug=true 的参数告诉 Zuul 当前请求的调试信息需要通过响应头进行输出，
+ * 这样在这个请求的响应头中就有了 Debug 相关的信息。
+ */
 @Component
 public class DebugRequestFilter extends ZuulFilter {
 	

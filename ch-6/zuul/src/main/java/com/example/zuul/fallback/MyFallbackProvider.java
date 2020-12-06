@@ -13,7 +13,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 class MyFallbackProvider implements FallbackProvider {
-	
+
+    /**
+     * 需要实现 FallbackProvider 中的 getRoute 方法，告诉 Zuul 它是负责哪个路由的熔断，
+     * 如果想全局进行处理可以返回 * 号表示所有
+     * @return
+     */
     @Override
     public String getRoute() {
         return "*";

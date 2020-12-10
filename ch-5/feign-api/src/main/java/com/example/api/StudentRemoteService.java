@@ -13,7 +13,7 @@ import com.example.api.request.StudentRequest;
 public interface StudentRemoteService {
 
 	/**
-	 *
+	 * @GetMapping 继承了 @RequestMapping
 	 * @param request
 	 * @return
 	 */
